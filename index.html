@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертор на Бройни Системи</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Конвертор на Бройни Системи</h1>
+        <div class="card p-4">
+            <div class="form-group">
+                <label for="numberInput">Въведете число:</label>
+                <input type="text" class="form-control" id="numberInput" placeholder="Въведете вашето число">
+            </div>
+            <div class="form-row ">
+                <div class="form-group col-md-6">
+                    <label for="fromBaseSelect">От бройна система:</label>
+                    <select class="form-control" id="fromBaseSelect">
+                        <option value="2">Двоична</option>
+                        <option value="8">Осмична</option>
+                        <option value="10" selected>Десетична</option>
+                        <option value="16">Шестнадесетична</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="toBaseSelect">Към бройна система:</label>
+                    <select class="form-control" id="toBaseSelect">
+                        <option value="2">Двоична</option>
+                        <option value="8">Осмична</option>
+                        <option value="10">Десетична</option>
+                        <option value="16">Шестнадесетична</option>
+                    </select>
+                </div>
+            </div>
+            <button id="convertButton" class="btn btn-primary btn-block">Конвертирай</button>
+            <div class="mt-4">
+                <h4>Резултат:</h4>
+                <p id="result" class="lead"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
